@@ -1,1 +1,8 @@
-hallo vanuit de contact view
+<html>
+<head>
+
+</head>
+<body>
+<h1>Contact pagina</h1>
+</body>
+</html>
