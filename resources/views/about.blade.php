@@ -4,6 +4,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="px-4">
+    <div class="bg-blue-100 p-4 rounded">
+        @php
+        $announcement = "We hebben een nieuwe aankondiging! Probeer deze stijl te vermijden, data hoort in de controller thuis";
+        @endphp
+        <p>Extra mededeling {{$announcement}}.</p>
+    </div>
+
+
     <p>De persoon is {{$person}}.</p>
 
     @if($person == 'Nico Deblauwe') <b>Supermooie naam!</b> @endif
