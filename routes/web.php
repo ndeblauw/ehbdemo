@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
  * Publieke sectie website
  */
 Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'index'])->name('home');
+Route::get('/about', [\App\Http\Controllers\AboutController::class, 'index'])->name('about');
 Route::get('/contact', [\App\Http\Controllers\ContactController::class, 'index']);
 
 /*
