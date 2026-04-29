@@ -10,6 +10,7 @@ Route::get('/about', [\App\Http\Controllers\AboutController::class, 'index'])->n
 Route::get('/contact', [\App\Http\Controllers\ContactController::class, 'index']);
 
 Route::get('/articles', [\App\Http\Controllers\ArticleController::class, 'index']);
+Route::get('/articles/{article}', [\App\Http\Controllers\ArticleController::class, 'show']);
 
 /*
  * User die ingelogd is sectie

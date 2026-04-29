@@ -13,6 +13,12 @@ class ArticleController extends Controller
 
         return view('articles.index',[
             'articles' => $articles
+    public function show($id)
+    {
+        $article = Article::where('id', $id)->firstOrFail();
+
+        return view('articles.show', [
+            'article' => $article,
         ]);
     }
     //
