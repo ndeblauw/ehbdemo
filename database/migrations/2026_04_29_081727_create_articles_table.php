@@ -16,7 +16,7 @@ return new class extends Migration
 
             $table->string('title');
             $table->text('content');
-            $table->string('author');
+            $table->foreignId('author_id');
             $table->string('category');
             $table->timestamp('published_at');
 
