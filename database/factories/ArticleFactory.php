@@ -21,7 +21,7 @@ class ArticleFactory extends Factory
             'title' => $this->faker->sentence(),
             'content' => $this->faker->paragraph(),
             'author_id' => $this->faker->numberBetween(1,10),
-            'category' => $this->faker->randomElement(['Technology', 'Health', 'Business', 'Entertainment']),
+            'category_id' => $this->faker->numberBetween(1,3),
             'published_at' => $this->faker->date(),
         ];
     }
