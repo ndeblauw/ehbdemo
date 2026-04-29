@@ -3,10 +3,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-<nav class="bg-pink-200 p-4">
-    <a href="/">Home</a>
-    <a href="/contact">Contact</a>
-</nav>
+    <nav class="bg-pink-200 p-4">
+        <div class="max-w-6xl mx-auto">
+            <a class="mx-4 hover:font-bold" href="/">Home</a>
+            <a class="mx-4 hover:font-bold" href="/contact">Contact</a>
+            <a class="mx-4 hover:font-bold" href="/articles">Articles</a>
+        </div>
+    </nav>
 <main>
     {{$slot}}
 </main>
